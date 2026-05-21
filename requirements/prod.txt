@@ -1,0 +1,20 @@
+# Production-only Python dependencies
+# Additional packages needed in production environment
+
+# Enhanced production server
+uwsgi==2.0.23
+
+# Security enhancements
+django-ratelimit==4.1.0
+django-security==0.20.0
+
+# Monitoring and logging
+sentry-sdk==1.38.0
+django-health-check==3.17.0
+
+# Performance optimization
+django-redis==5.4.0
+django-cachalot==2.6.1
+
+# Static file serving (alternative to whitenoise)
+# django-storages==1.14.2  # Uncomment if using cloud storage

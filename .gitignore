@@ -1,0 +1,105 @@
+# TalentLens - Root .gitignore
+
+# Environment files
+.env
+.env.local
+.env.development
+.env.production
+.env.test
+
+# Database
+*.db
+*.sqlite3
+db.sqlite3
+
+# Logs
+*.log
+django.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Coverage directory used by tools like istanbul
+coverage/
+*.lcov
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# IDE and Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Temporary files
+*.tmp
+*.temp
+.cache/
+
+# Build directories
+build/
+dist/
+out/
+
+# Docker
+.dockerignore
+
+# Backup files
+*.backup
+*.bak
+
+# Local development
+local_settings.py
+temp_*.txt
+
+# Static files (Django)
+staticfiles/
+static/
+
+# Media files
+media/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Virtual environments
+venv/
+env/
+ENV/
+.env/
+.venv/
+
+# Node modules (if any)
+node_modules/
+
+# Package files
+*.egg-info/
+dist/
+build/
+*.egg
+
+# Pytest
+.pytest_cache/
+.coverage
+
+# MyPy
+.mypy_cache/
+.dmypy.json
+dmypy.json

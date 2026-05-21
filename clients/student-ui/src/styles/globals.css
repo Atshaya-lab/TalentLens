@@ -1,0 +1,81 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&display=swap');
+
+@layer base {
+  html {
+    font-family: 'Inter', system-ui, sans-serif;
+    font-feature-settings: 'cv11', 'ss01';
+    font-variant-numeric: tabular-nums;
+  }
+  
+  * {
+    @apply border-neutral-200;
+  }
+  
+  body {
+    @apply text-neutral-900 antialiased;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-semibold tracking-tight;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply inline-flex items-center justify-center px-5 py-2.5 text-sm font-medium rounded-xl border border-transparent shadow-soft focus:outline-none focus:ring-2 focus:ring-offset-2 transition-all duration-200;
+  }
+  
+  .btn-primary {
+    @apply btn bg-accent-600 text-white hover:bg-accentse up -d
+[+] Running 6/6
+ ✔ Container talentlens_postgres    Healthy                                                   0.6s 
+ ✔ Container talentlens_redis       Healthy                                                   0.6s 
+ ✔ Container talentlens_backend     Running                                                   0.0s 
+ ✔ Container talentlens_admin_ui    Running                                                   0.0s 
+ ✔ Container talentlens_teacher_ui  Running                                                   0.0s 
+ ✔ Container talentlens_student_ui  Running                                                   0.0s 
+venny@Venny:~/Desktop/Nero_Skill_Trainer$ 
+
+
+-700 focus:ring-accent-500 shadow-accent-600/20;
+  }
+  
+  .btn-secondary {
+    @apply btn bg-neutral-100 text-neutral-900 hover:bg-neutral-200 focus:ring-neutral-500;
+  }
+  
+  .btn-danger {
+    @apply btn bg-error-600 text-white hover:bg-error-700 focus:ring-error-500 shadow-error-600/20;
+  }
+  
+  .input-field {
+    @apply w-full px-4 py-3 text-neutral-900 bg-white border border-neutral-300 rounded-xl shadow-soft placeholder-neutral-500 focus:outline-none focus:ring-2 focus:ring-accent-500 focus:border-transparent transition-all duration-200;
+  }
+  
+  .card-modern {
+    @apply bg-white rounded-2xl border border-neutral-200 shadow-soft hover:shadow-medium transition-all duration-200;
+  }
+  
+  .gradient-bg {
+    @apply bg-gradient-to-br from-neutral-50 to-neutral-100;
+  }
+  
+  .text-gradient {
+    @apply bg-gradient-to-r from-accent-600 to-accent-700 bg-clip-text text-transparent;
+  }
+}
+
+@layer utilities {
+  .animate-pulse-slow {
+    animation: pulse 3s ease-in-out infinite;
+  }
+  
+  .glass {
+    @apply bg-white/80 backdrop-blur-sm border border-white/20;
+  }
+}

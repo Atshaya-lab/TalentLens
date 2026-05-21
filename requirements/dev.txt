@@ -1,0 +1,24 @@
+# Development-only Python dependencies
+# These packages are only needed during development
+
+# Debugging and testing
+pytest==7.4.3
+pytest-django==4.7.0
+coverage==7.3.2
+factory-boy==3.3.0
+
+# Code quality
+flake8==6.1.0
+black==23.11.0
+isort==5.12.0
+pre-commit==3.5.0
+
+# Django development tools
+django-debug-toolbar==4.2.0
+django-shell-plus==1.1.7
+
+# API documentation
+drf-spectacular==0.26.5
+
+# Database management
+django-migration-testcase==1.0.0
